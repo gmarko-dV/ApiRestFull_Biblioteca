@@ -205,75 +205,17 @@ curl -X POST http://localhost:8000/libros/ \
 
 ## 📸 Evidencias del Proyecto
 
-### Imagen 1: Estructura del Proyecto
-![Estructura del Proyecto](images/1.png)
-*Vista de la estructura de archivos y directorios del proyecto*
+### Imagen 1: Evidencias
+![Evidencias](images/1.png)
 
-### Imagen 2: Modelos de Base de Datos
-![Modelos de Base de Datos](images/2.png)
-*Diagrama de los modelos de datos: Autor, Categoría y Libro*
+### Imagen 2: Evidencias
+![Evidencias](images/2.png)
 
-### Imagen 3: Endpoints de la API
-![Endpoints de la API](images/3.png)
-*Documentación de los endpoints disponibles en la API*
 
-### Imagen 4: Funcionalidades Implementadas
-![Funcionalidades Implementadas](images/4.png)
-*Demostración de las funcionalidades CRUD implementadas*
+### Imagen 3: Evidencias
+![Evidencias](images/3.png)
 
-## 🔧 Configuración Avanzada
+### Imagen 4: Evidencias
+![Evidencias](images/4.png)
 
-### Paginación
-La API está configurada con paginación automática de 10 elementos por página. Para cambiar esto, modifica el archivo `config/settings.py`:
 
-```python
-REST_FRAMEWORK = {
-    'PAGE_SIZE': 20  # Cambiar a 20 elementos por página
-}
-```
-
-### Permisos
-Actualmente configurado con permisos abiertos para desarrollo. Para producción, se recomienda implementar autenticación:
-
-```python
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
-}
-```
-
-## 🚀 Despliegue
-
-### Para Producción
-1. Configurar `DEBUG = False` en `settings.py`
-2. Configurar `ALLOWED_HOSTS` con tu dominio
-3. Usar una base de datos de producción (PostgreSQL, MySQL)
-4. Configurar archivos estáticos
-5. Usar un servidor WSGI como Gunicorn
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 👨‍💻 Autor
-
-Desarrollado como parte de un examen académico para demostrar competencias en desarrollo de APIs REST con Django.
-
-## 📞 Contacto
-
-Para preguntas o sugerencias sobre este proyecto, por favor contacta al desarrollador.
-
----
-
-**¡Gracias por usar la API de Biblioteca! 📚✨**
