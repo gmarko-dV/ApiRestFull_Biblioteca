@@ -1,18 +1,19 @@
 from rest_framework import serializers
 from .models import Autor,Categoria,Libro
 
+#Se crean los serializadores para convertir los datos a formato JSON.
 class AutorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Autor
-        field = ['id','nombre','bibliografia','fecha_nacimiento']
+        fields = '__all__' 
 
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Categoria
-        field = ['id','nombre']
+        fields = '__all__' 
 
 class LibroSerializer(serializers.ModelSerializer):
     class Meta:
         model = Libro
-        field = ['id','titulo','descripcion','autor','categoria','fecha_publi','isbn']
+        fields = '__all__' 
                                 
